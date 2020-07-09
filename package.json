@@ -3,7 +3,7 @@
   "version": "10.0.2",
   "scripts": {
     "ng": "ng",
-    "start": "npm install && ng serve --port 4200",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -14,7 +14,6 @@
     "type": "git",
     "url": "https://github.com/ganatan/angular-example-starter.git"
   },
-  
   "engines": {
     "node": "6.11.0",
     "npm": "3.10.10"
@@ -39,6 +38,8 @@
     "@angular/platform-browser": "10.0.2",
     "@angular/platform-browser-dynamic": "10.0.2",
     "@angular/router": "10.0.2",
+    "express": "^4.17.1",
+    "path": "^0.12.7",
     "rxjs": "6.6.0",
     "tslib": "2.0.0",
     "zone.js": "0.10.3"
@@ -47,10 +48,11 @@
     "@angular-devkit/build-angular": "0.1000.1",
     "@angular/cli": "10.0.1",
     "@angular/compiler-cli": "10.0.2",
-    "@types/node": "14.0.14",
     "@types/jasmine": "3.5.11",
     "@types/jasminewd2": "2.0.8",
+    "@types/node": "14.0.14",
     "codelyzer": "5.2.2",
+    "enhanced-resolve": "^3.3.0",
     "jasmine-core": "3.5.0",
     "jasmine-spec-reporter": "5.0.2",
     "karma": "5.1.0",
