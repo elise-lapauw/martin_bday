@@ -3,20 +3,15 @@
   "version": "10.0.2",
   "scripts": {
     "ng": "ng",
-    "start": "node server.js",
+    "start": "ng serve --port 4200",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "heroku-postbuild": "ng build --prod",
   "repository": {
     "type": "git",
     "url": "https://github.com/ganatan/angular-example-starter.git"
-  },
-  "engines": {
-    "node": "6.11.0",
-    "npm": "3.10.10"
   },
   "author": {
     "name": "danny",
@@ -38,25 +33,18 @@
     "@angular/platform-browser": "10.0.2",
     "@angular/platform-browser-dynamic": "10.0.2",
     "@angular/router": "10.0.2",
-    "express": "^4.17.1",
-    "path": "^0.12.7",
     "rxjs": "6.6.0",
     "tslib": "2.0.0",
-    "@angular/compiler-cli": "^4.4.6",
-    "@angular/http": "^4.2.4",
-    "core-js": "^2.4.1",
-    "typescript": "~2.3.3",
-    "zone.js": "^0.8.14"
+    "zone.js": "0.10.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "0.1000.1",
     "@angular/cli": "10.0.1",
     "@angular/compiler-cli": "10.0.2",
+    "@types/node": "14.0.14",
     "@types/jasmine": "3.5.11",
     "@types/jasminewd2": "2.0.8",
-    "@types/node": "14.0.14",
     "codelyzer": "5.2.2",
-    "enhanced-resolve": "^3.3.0",
     "jasmine-core": "3.5.0",
     "jasmine-spec-reporter": "5.0.2",
     "karma": "5.1.0",
@@ -67,20 +55,6 @@
     "protractor": "7.0.0",
     "ts-node": "8.10.2",
     "tslint": "6.1.2",
-    "@angular/animations": "^4.2.4",
-    "@angular/common": "^4.2.4",
-    "@angular/compiler": "^4.2.4",
-    "@angular/core": "^4.2.4",
-    "@angular/forms": "^4.2.4",
-    "@angular/http": "^4.2.4",
-    "@angular/platform-browser": "^4.2.4",
-    "@angular/platform-browser-dynamic": "^4.2.4",
-    "@angular/router": "^4.2.4",
-    "core-js": "^2.4.1",
-    "express": "^4.16.2",
-    "rxjs": "^5.4.2",
-    "typescript": "~2.3.3",
-    "zone.js": "^0.8.14",
-    "@angular/language-service": "^4.2.4",
+    "typescript": "3.9.6"
   }
 }
