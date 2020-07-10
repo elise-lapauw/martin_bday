@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'angular-starter';
   martinQualities : any[];
   isClicked = false;
-  ngOnInit() {
+  constructor() {
     this.martinQualities = [
       {
         qualite: 'un membre d\' une famille,',
@@ -72,6 +72,7 @@ export class AppComponent implements OnInit {
   ];
   }
 
+  // tslint:disable-next-line:typedef
   onClickImg(q) {
     q.isClicked = !q.isClicked;
     const t = this.martinQualities.find(m => m.qualite === q.qualite)
